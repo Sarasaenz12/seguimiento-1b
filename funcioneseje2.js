@@ -1,10 +1,8 @@
-// Array que contiene el número de habitaciones disponibles
+
 const rooms = [100, 101, 102, 103, 201, 202, 203, 301, 302, 303];
 
-// Array que contiene el estado de reserva de cada habitación (libre o reservada)
 const roomStatus = Array(10).fill(false);
 
-// Objeto que almacena las reservas de habitaciones, donde la clave es el número de habitación y el valor es el nombre del huésped
 const roomReservations = {};
 
 // Función para reservar una habitación
