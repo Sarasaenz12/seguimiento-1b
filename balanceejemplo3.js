@@ -1,5 +1,8 @@
 const sala1 = Array(10).fill(false);
 const sala2 = Array(10).fill(false);
+const ticket = 7000;
+let recaudadoSala1  = 0
+let recaudadoSala2 = 0
 
 const costoBoleta = 10; // Costo de cada boleta
 
@@ -38,9 +41,9 @@ function verPelicula() {
 }
 
 function verBalance() {
-  const totalRecaudadoSala1 = sala1.filter(asiento => asiento).length * costoBoleta;
-  const totalRecaudadoSala2 = sala2.filter(asiento => asiento).length * costoBoleta;
-  const totalRecaudadoGeneral = totalRecaudadoSala1 + totalRecaudadoSala2;
+  const recaudadoSala1 = sala1.filter(asiento => asiento).length * costoBoleta;
+  const recaudadoSala2 = sala2.filter(asiento => asiento).length * costoBoleta;
+  const totalRecaudadoGeneral = recaudadoSala1 + recaudadoSala2;
 
   alert(`Dinero recaudado en la Sala 1: $${totalRecaudadoSala1}`);
   alert(`Dinero recaudado en la Sala 2: $${totalRecaudadoSala2}`);
